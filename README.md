@@ -1,6 +1,5 @@
-# instagram_like
-
-A new Flutter project.
+# Flutter Instagram like conference at Epitech Lyon 
+## 18/02/2022
 
 ## Getting Started
 

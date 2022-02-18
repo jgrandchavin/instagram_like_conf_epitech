@@ -26,6 +26,13 @@ class _PostWidgetState extends State<PostWidget> with TickerProviderStateMixin {
   void initState() {
     animationController = AnimationController(
         vsync: this, duration: const Duration(milliseconds: 500));
+
+    animationController.addStatusListener((status) async {
+      if (status == AnimationStatus.completed) {
+        await Future.delayed(const Duration(milliseconds: 150));
+        animationController.reset();
+      }
+    });
     super.initState();
   }
 
